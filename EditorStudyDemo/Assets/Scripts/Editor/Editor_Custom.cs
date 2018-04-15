@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-[CustomEditor(typeof(Animal), true)]
+[CustomEditor(typeof(Animal), true)]//指定edito作用的脚本 true 作用于指定脚本的子类
 public class Editor_Custom : Editor {
-
     /// <summary>
     /// 重新简视面板的绘制
     /// </summary>
     public override void OnInspectorGUI()
     {
+        
         base.OnInspectorGUI();
         Animal animal = target as Animal;
       //SerializedProperty property=  serializedObject.FindProperty("life");
